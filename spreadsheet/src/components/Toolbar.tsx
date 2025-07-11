@@ -10,10 +10,11 @@ import {
   GitFork,
   Plus
 } from 'lucide-react';
+import cell from "../assets/cell view.svg"
 
 const ActionToolbar = () => {
   return (
-    <div className="flex justify-between items-center border-b bg-white px-4 py-2 text-sm text-gray-600">
+    <div className="flex justify-between items-center  bg-white px-4 py-2 text-sm text-gray-600">
       <div className="flex items-center gap-4">
         <button className="flex items-center gap-1 hover:text-black">
           <span>Tool bar</span>
@@ -32,7 +33,8 @@ const ActionToolbar = () => {
           <span>Filter</span>
         </button>
         <button className="flex items-center gap-1 hover:text-black">
-          <LayoutGrid className="w-4 h-4" />
+          <img src = {cell}/>
+          
           <span>Cell view</span>
         </button>
       </div>
