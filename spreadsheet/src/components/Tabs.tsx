@@ -1,4 +1,4 @@
-import React,{ useState } from "react";
+import { useState } from "react";
 import type { FC } from "react";
 
 const tabs = ["All Orders", "Pending", "Reviewed", "Arrived"];

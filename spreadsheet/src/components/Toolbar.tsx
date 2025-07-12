@@ -8,7 +8,7 @@ import {
   Download,
   Share2,
 } from "lucide-react";
-import React, { useState, useRef } from "react";
+import  { useState, useRef } from "react";
 import cell from "../assets/cell view.svg";
 import fork from "../assets/fork.svg";
 

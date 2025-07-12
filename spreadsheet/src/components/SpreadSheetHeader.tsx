@@ -1,5 +1,5 @@
 // src/components/SpreadsheetHeaderFull.tsx
-import React, { useState } from "react";
+import  { useState } from "react";
 import {
   Link2,
   RefreshCw
