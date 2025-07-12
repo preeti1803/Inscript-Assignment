@@ -1,18 +1,18 @@
 import React from "react";
-type Props = { priority: string }
+interface PriorityBadgeProps {
+  priority: "High" | "Medium" | "Low";
+}
 
-const PriorityBadge = ({ priority }: Props) => {
-  const colors: Record<string, string> = {
-    High: 'text-red-600',
-    Medium: 'text-yellow-600',
-    Low: 'text-blue-600',
+export default function PriorityBadge({ priority }: PriorityBadgeProps) {
+  const base = "text-sm font-semibold text-center";
+
+  const priorityStyles = {
+    High: "text-red-500",
+    Medium: "text-[rgba(194,146,16,1)]",
+    Low: "text-blue-600",
   };
 
   return (
-    <span className={`text-sm font-medium ${colors[priority] || 'text-gray-600'}`}>
-      {priority}
-    </span>
+    <span className={`${base} ${priorityStyles[priority]}`}>{priority}</span>
   );
-};
-
-export default PriorityBadge;
+}

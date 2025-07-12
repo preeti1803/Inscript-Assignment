@@ -17,7 +17,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* tailwind.config.js or global.css */
 .custom-scrollbar::-webkit-scrollbar {
   display: none;
@@ -26,9 +25,6 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-
-
-
 
 /* a {
   font-weight: 500;
